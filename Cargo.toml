@@ -1,0 +1,4 @@
+[package]
+name = "sig_verify_daba96"
+version = "0.0.0"
+edition = "2018"

